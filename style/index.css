@@ -18,7 +18,7 @@ header nav ul li:last-child>a img{width: 100%;}
 /* ========================================== */
 main{}
 main section{}
-main section .top{text-align: center; padding: 50px 0;}
+main section .top{text-align: center; padding: 50px 0; margin-bottom: 50px;}
 main section .top h2{font-size: 2.5rem; font-weight: 600; margin-bottom: 30px; }
 main section .top .text{
     display: flex; justify-content: center; align-items: center;
@@ -53,13 +53,13 @@ main section .container .card .imgbox>p:first-child{margin-bottom: 5px;}
 main section .container:last-child .card .imgbox>p:first-child{margin-right: 5px;}
 main section .container:last-child .card .imgbox>p:last-child{margin-right: 0px;}
 main section .container .card .imgbox>p{height: 297px;}
-main section .container:last-child .card .imgbox>p{height: 600px;}
+main section .container:last-child .card .imgbox>p{height: 600px; width: 100%;}
 main section .container .card .imgbox>p img{width: 100%; height: 100%;}
 main section .container .card .textbox{}
-main section .container .card .textbox>*{font-size: 0.875rem;}
+main section .container .card .textbox>*{font-size: 0.875rem; line-height: 150%;}
 main section .container .card .textbox>p{margin: 10px 0;}
 main section .container .card .textbox>p:last-child{}
-main section .container .card .textbox .tmi{}
+main section .container .card .textbox .tmi{padding: 0 5px; margin: 10px 0;}
 main section .container .card .textbox .tmi>p{margin-bottom: 5px;}
 main section .container .card>button{
     display: block; transition: all 0.5s;
