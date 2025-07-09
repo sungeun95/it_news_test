@@ -1,0 +1,95 @@
+header{
+    width: 100%; 
+    display: flex; justify-content: space-between;
+    line-height: 100px; align-items: center;
+    padding: 20px; border-bottom: 1px solid #007BFF;
+}
+header h1{width: 200px;}
+header h1>a{}
+header h1>a img{width: 100%;}
+header nav{}
+header nav ul{
+    display: flex;
+}
+header nav ul li{margin-left: 50px;}
+header nav ul li>a{}
+header nav ul li:last-child{width: 20px; height: 20px;}
+header nav ul li:last-child>a img{width: 100%;}
+/* ========================================== */
+main{}
+main section{}
+main section .top{text-align: center; padding: 50px 0;}
+main section .top h2{font-size: 2.5rem; font-weight: 600; margin-bottom: 30px; }
+main section .top .text{
+    display: flex; justify-content: center; align-items: center;
+}
+main section .top .text>p{margin-right: 20px; font-size: 0.875rem;}
+main section .top .text>button{
+    transition: all 0.5s;
+    padding:5px 10px; background-color: #d9d9d9; font-size: 0.875rem; font-weight: 500;
+}
+main section .top .text>button:hover{
+    background-color: #F8F9FA; color: #007BFF;
+}
+main section .containerall{
+    padding: 0 350px;
+    display: flex; flex-flow: wrap;
+    gap: 20px;
+}
+main section .container{
+    width: 590px; padding: 20px 20px;
+    border-radius: 30px; border: 1px solid #d9d9d9;
+}/* 카드 공통 */
+main section .container:last-child{width: 100%;}
+main section .container .card{}
+main section .container .card h3{
+    font-size: 1.375rem; font-weight: 600; margin-bottom: 20px;
+}
+main section .container .card .imgbox{
+    width: 100%; height: 600px; margin-bottom: 20px;
+}
+main section .container:last-child .card .imgbox{display: flex;}
+main section .container .card .imgbox>p:first-child{margin-bottom: 5px;}
+main section .container:last-child .card .imgbox>p:first-child{margin-right: 5px;}
+main section .container:last-child .card .imgbox>p:last-child{margin-right: 0px;}
+main section .container .card .imgbox>p{height: 297px;}
+main section .container:last-child .card .imgbox>p{height: 600px;}
+main section .container .card .imgbox>p img{width: 100%; height: 100%;}
+main section .container .card .textbox{}
+main section .container .card .textbox>*{font-size: 0.875rem;}
+main section .container .card .textbox>p{margin: 10px 0;}
+main section .container .card .textbox>p:last-child{}
+main section .container .card .textbox .tmi{}
+main section .container .card .textbox .tmi>p{margin-bottom: 5px;}
+main section .container .card>button{
+    display: block; transition: all 0.5s;
+    padding: 10px 30px; margin: 20px auto; border-radius: 30px; border: 1px solid #007BFF; color: #007BFF;
+}
+main section .container .card>button:hover{
+    background-color: #007BFF; color: #fff;
+}
+main section .container .card .textbox .tmi .tmi_h{}/* 마지막카드에만 적용 */
+main section .container .card .textbox .summary{}/* 마지막카드에만 적용 */
+main section .container .card .textbox .summary .summary_h{margin-top: 20px;}/* 마지막카드에만 적용 */
+main section .container .card .textbox .summary>p{margin: 10px 0;}/* 마지막카드에만 적용 */
+/* ===================== */
+footer{
+    padding: 45px 360px; margin-top: 50px;
+    background-color: #d9d9d9;
+    display: flex; justify-content: space-between;
+}
+footer>p{}
+footer>a{width: 200px;}
+footer>a img{width: 100%;}
+
+@media screen and (max-width:599px){
+    main section .top h2{font-size: 2rem;}
+    header nav ul li{margin-left: 20px;}
+    main section .containerall{padding: 0 20px;}
+    main section .container:last-child .card .imgbox{display: block;}
+    main section .container:last-child .card .imgbox>p{height: 297px;}
+    footer{padding: 45px 0px;
+    display: block; text-align: center;
+    }
+    footer>a img{width: 200px; margin-top: 20px;}
+}
